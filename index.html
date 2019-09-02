@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <!-- Load the latest version of TensorFlow.js -->
+    <script src="https://unpkg.com/@tensorflow/tfjs"></script>
+    <script src="https://unpkg.com/@tensorflow-models/mobilenet"></script>
+    <!--import of KNN Classifier  -->
+    <script src="https://unpkg.com/@tensorflow-models/knn-classifier"></script>
+  </head>
+  <body>
+    <h2>Transfer Learning Image Classifier using TensorFlow.js</h2>
+    <div id="console"></div>
+    <!-- Add an image that we will use to test
+    <img id="img" crossOrigin src="https://i.imgur.com/JlUvsxa.jpg" width=227 height=227/> -->
+
+    <!-- set up the webcam video element  -->
+    <video autoplay playsinline muted id="webcam" width="224" height="224"></video>
+
+    <!-- These buttons will be used to add training images to the model.-->
+    <button id="class-a">Add A</button>
+    <button id="class-b">Add B</button>
+    <button id="class-c">Add C</button>
+    <!-- Load index.js after the content of the page -->
+    <script src="index.js"></script>
+  </body>
+</html>
